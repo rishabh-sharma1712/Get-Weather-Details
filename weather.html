@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Weather</title>
+    <link rel="stylesheet" href="w.css">
+    <script src="w.js"></script>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+<body>
+    <div class="container" id="main">
+        <!-- style="border: 1px solid white;" -->
+        <form class="searchBar" onsubmit="getWeather()">
+            <input type="search" placeholder="enter city name" id="location" style="border: none;">
+            <button type="submit" id="search"><i class="fa fa-search"></i></button>
+        </form>
+        <div id="informationData">
+            <div class="logo" style="border: none;">
+                <center>
+                    <img id="weatherImg"></img>
+                </center>  
+            </div>
+            <div id="temp">
+                <center id="tempValue"><strong></strong></center>
+            </div>
+            <div >
+                <center id="locationVal"><strong></strong></center>
+            </div>
+            <div class="values">
+                <span id="humidity" >
+                    <img src="./images/humidity.png" alt="" >
+                    <span style='font-size:30px; color: aqua; ' id="percent"> %</span>
+                </span>
+                <span id="windDetails" style="margin-left: 50px;" >
+                    <img src="./images/windy.png" alt="">
+                    <span style='font-size:30px; color: aqua;' id="windSpeed"> m/s</span>
+                </span>   
+            </div>
+            <div id="valueHeadings">
+                <span>Humidity</span>
+                <span  style="margin-left: 95px;">Wind Speed</span>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
